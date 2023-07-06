@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Record Page</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container_2">
+        <div class="title_2">
+            <h2>Student-Record</h2><br>
+        </div>
+        <div class="tables_2">
+                       <b>NAME:</b>
+
+                        <div0 id="name">
+                        </div0>
+                        <span>
+                            <script>
+                                const queryString = window.location.search;
+                                const urlParams = new URLSearchParams(queryString);
+                                const name = urlParams.get('name');
+                                let div0 = document.getElementById("name");
+                                div0.innerHTML = name;
+                            </Script>
+                        </span><br>
+                        <br><b>FATHER NAME:</b>
+                        <div1 id="fathername">
+
+                        </div1>
+                        <span>
+                            <script>
+                                const fathername = urlParams.get('fathername');
+                                // console.log(fathername)
+                                let div1 = document.getElementById("fathername");
+                                div1.innerHTML = fathername;
+                            </script>
+                        </span><br>
+                         <br><b>CONTACT:</b>
+                        <div2 id="contact">
+
+                        </div2>
+                        <br> <span>
+                          <script>
+                                const contact = urlParams.get('contact');
+                                // console.log(contact)
+                                let div2 = document.getElementById("contact");
+                                div2.innerHTML = contact;
+                            </script>
+                        </span><br>
+                         <b>INSTITUTE:</b>
+                        <div3 id="institute">
+
+                        </div3>
+                        <span>
+                            <script>
+                                const institute = urlParams.get('institute');
+                                // console.log(institute)
+                                let div3 = document.getElementById("institute");
+                                div3.innerHTML = institute;
+                            </script>
+                        </span>  <br>
+                    
+                         <br><b>CLASS:</b>
+                        <div4 id="clas">
+
+                        </div4>
+
+                        <span>
+                            <script>
+                                const clas = urlParams.get('clas');
+                                // console.log(clas)
+                                let div4 = document.getElementById("clas");
+                                div4.innerHTML = clas;
+                            </script>
+                        </span>  <br>
+                   
+                         <br><b>SEMESTER:</b>
+                        <div5 id="semester">
+
+                        </div5>
+                        <span>
+                            <script>
+                                const semester = urlParams.get('semester');
+                                let div5 = document.getElementById("semester");
+                                div5.innerHTML = semester;
+                            </script>
+                        </span>  <br>
+                 
+                         <br><b>GENDER:</b>
+                        <div6 id="gender">
+
+                        </div6>
+                        <span>
+                            <script>
+                                const gender = urlParams.get('gender');
+                                let div6 = document.getElementById("gender");
+                                div6.innerHTML = gender;
+                            </script>
+                        </span>  <br>
+                     
+        </div>
+        <div class="table_3">
+            <!-- <div id="table_two_div"> -->
+                <br><table id="table">
+                        <tr>
+                            <th>Subject #</th>
+                            <th><span>Name<span></th>
+                            <th>Obtained</th>
+                            <th>Total</th>
+                        </tr>
+                    
+                        <tr>
+                            <td>1</td>
+                            <td id="s1">...</td>
+                            <td id="subject_1_obtained" class="count-me" >...</td>
+                            <td id="subject_1_total" class="count-me2"  >...</td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td id="s2">...</td>
+                            <td id="subject_2_obtained" class="count-me" >...</td>
+                            <td id="subject_2_total"class="count-me2"  >...</td>
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                            <td id="s3">...</td>
+                            <td id="subject_3_obtained" class="count-me" >...</td>
+                            <td id="subject_3_total" class="count-me2"  >...</td>
+                        </tr>
+                        <tr>
+                            <td>4</td>
+                            <td id="s4">...</td>
+                            <td id="subject_4_obtained" class="count-me" >...</td>
+                            <td id="subject_4_total" class="count-me2" >...</td>
+                        </tr>
+                       
+                    
+            <!-- </div> -->
+        </div>
+
+
+        <script>
+            const s_1_name = urlParams.get('s1');
+            let tag = document.getElementById("s1");
+            tag.innerHTML = s_1_name;
+
+            const s_1_total = urlParams.get('total1');
+            tag = document.getElementById("subject_1_total");
+            tag.innerHTML = s_1_total;
+
+            const s_1_obtained = urlParams.get('obtained1');
+            tag = document.getElementById("subject_1_obtained");
+            tag.innerHTML = s_1_obtained;
+        </script>
+
+        <script>
+            const s_2_name = urlParams.get('s2');
+            tag = document.getElementById("s2");
+            tag.innerHTML = s_2_name;
+
+            const s_2_total = urlParams.get('total2');
+            tag = document.getElementById("subject_2_total");
+            tag.innerHTML = s_2_total;
+
+            const s_2_obtained = urlParams.get('obtained2');
+            tag = document.getElementById("subject_2_obtained");
+            tag.innerHTML = s_2_obtained;
+        </script>
+        <script>
+            const s_3_name = urlParams.get('s3');
+            tag = document.getElementById("s3");
+            tag.innerHTML = s_3_name;
+
+            const s_3_total = urlParams.get('total3');
+            tag = document.getElementById("subject_3_total");
+            tag.innerHTML = s_3_total;
+
+            const s_3_obtained = urlParams.get('obtained3');
+            tag = document.getElementById("subject_3_obtained");
+            tag.innerHTML = s_3_obtained;
+        </script>
+        <script>
+            const s_4_name = urlParams.get('s4');
+            tag = document.getElementById("s4");
+            tag.innerHTML = s_4_name;
+
+            const s_4_total = urlParams.get('total4');
+            tag = document.getElementById("subject_4_total");
+            tag.innerHTML = s_4_total;
+
+            const s_4_obtained = urlParams.get('obtained4');
+            tag = document.getElementById("subject_4_obtained");
+            tag.innerHTML = s_4_obtained;
+        </script>
+        <span id="val"></span>
+
+   
+        
+            <script>
+            var tds = document.getElementById('table').getElementsByTagName('td');
+            var sum = 0;
+            var sum2 = 0;
+            for(var i = 0; i < tds.length; i ++) {
+                if(tds[i].className == 'count-me') {
+                    sum += isNaN(tds[i].innerHTML) ? 0 : parseInt(tds[i].innerHTML);
+                }
+            }
+            for(var i = 0; i < tds.length; i ++) {
+                if(tds[i].className == 'count-me2') {
+                    sum2 += isNaN(tds[i].innerHTML) ? 0 : parseInt(tds[i].innerHTML);
+                }
+            }
+            document.getElementById('table').innerHTML += '<tr><td colspan="2" align="center" ><b>Total<b></td> <td style= "background:#00cccc;color:#fff" >' + sum + '</td> <td style= "background:#00cccc;color:#fff">' + sum2 + '</td></tr>';
+        
+        </script>
+
+        </script>
+
+
+
+
+    </div>
+
+</body>
+
+</html>

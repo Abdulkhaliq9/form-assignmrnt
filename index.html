@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RECORD</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="main.js"></script>
+
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="title">
+            <h2>Record</h2>
+        </div>
+
+        <form action="res_page.html" method="get">
+            <div class="user-details">
+                <div class="input-box">
+                    <span class="details"><b>NAME</b></span>
+                    <input type="text" name="name" placeholder="Enter Full-Name" required>
+                </div>
+                <div class="input-box">
+                    <span class="details"><b>FATHER NAME</b></span>
+                    <input type="text" name="fathername" placeholder="Enter Father Name" required>
+                </div>
+                <div class="input-box">
+                    <span class="details"><b>CONTACT</b></span>
+                    <input type="text" name="contact" placeholder="Enter phone Number " required>
+                </div>
+                <div class="input-box">
+                    <span class="details"><b>INSTITUTE</b></span>
+                    <input type="text" name="institute" placeholder="Enter Institute" required>
+                </div>
+                <div class="input-box">
+                    <span class="details"><b>CLASS</b></span>
+                    <input type="text" name="clas" placeholder="Enter Class " required>
+                </div>
+                <div class="input-box">
+                    <span class="details"><b>SEMESTER</b></span>
+                    <input type="number" name="semester" placeholder="Enter semester" required>
+
+                </div>
+
+            </div>
+
+            <!-- <div class="obmarks"> -->
+            <div class="sub">
+                <div class="input-box">
+                    <div id="err_no_1" class="">
+                        <p> Error! Obtained is greater than Total.</p>
+
+                    </div>
+                    <span class="details"><b>Subject</b></span>
+                    <input type="text" name="s1" id="s1" placeholder="Enter subject" required>
+                    <input type="number" name="obtained1" onkeyup="validation(this)" data-id="1" id="obtained1"
+                        placeholder="Subject Marks..." required><br><br>
+                    <input type="number" name="total1" onkeyup="validation(this)" data-id="1" id="total1"
+                        placeholder="Subject Total Marks..." required><br><br>
+
+                </div>
+
+
+                <div class="input-box">
+                    <div id="err_no_2" class="">
+                        <p> Error! Obtained is greater than Total.</p>
+                    </div>
+                    <span class="details"><b>Subject</b></span>
+                    <input type="text" name="s2" id="s2" placeholder="Subject Name..." required><br><br>
+
+                    <input type="number" name="obtained2" onkeyup="validation(this)" data-id="2" id="obtained2"
+                        placeholder="Subject Marks..." required><br><br>
+                    <input type="number" name="total2" onkeyup="validation(this)" data-id="2" id="total2"
+                        placeholder="Subject Total Marks..." required><br><br>
+
+
+                </div>
+
+
+                <div class="input-box">
+                    <div id="err_no_3" class="">
+                        <p>Error : Obtained > Total</p>
+                    </div>
+                    <span class="details"><b>Subject</b></span>
+                    <input type="text" name="s3" id="s3" placeholder="Subject Name..." required><br><br>
+                    <input type="number" name="obtained3" onkeyup="validation(this)" data-id="3" id="obtained3"
+                        placeholder="Subject Marks..." required><br><br>
+                    <input type="number" name="total3" onkeyup="validation(this)" data-id="3" id="total3"
+                        placeholder="Subject Total Marks..." required><br><br>
+
+                </div>
+                <div class="input-box">
+                    <div id="err_no_4" class="">
+                        <p> Error! Obtained is greater than Total.</p>
+
+                    </div>
+                    <span class="details"><b>Subject</b></span>
+                    <input type="text" name="s4" id="s4" placeholder="Enter subject" required>
+                    <input type="number" name="obtained4" onkeyup="validation(this)" data-id="4" id="obtained4"
+                        placeholder="Subject Marks..." required><br><br>
+                    <input type="number" name="total4" onkeyup="validation(this)" data-id="4" id="total4"
+                        placeholder="Subject Total Marks..." required><br><br>
+
+                </div>
+
+
+            </div>
+
+
+            <h3>
+                Gender:
+            </h3>
+            <div class="Gender">
+                <input type='radio' value="Male" id='male' name='gender' required>
+                <label for='male'>Male</label>
+                <input type='radio' value="Female" id='female' name='gender' required>
+                <label for='female'>Female</label>
+                <input type='radio' value="Other" id='other' name='gender' required>
+                <label for='other'>Other</label>
+            </div>
+
+
+            <div class="button">
+
+                <input type="submit" id="submit_button" onclick="beforeSubmit()">
+
+            </div>
+
+        </form>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </div>
+
+
+
+</body>
+
+</html>
